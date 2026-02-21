@@ -91,11 +91,10 @@ header {
 }
 
 .detail-image {
-    width: 100%;           /* Das Bild nutzt die Breite des Containers... */
-    max-width: 500px;      /* ...aber es wird niemals breiter als 500 Pixel! */
-    height: auto;          /* Die Höhe passt sich automatisch an (nicht verzerrt) */
-    border-radius: 10px;
-    display: block;        /* Hilft beim Zentrieren */
-    margin: 0 auto 30px auto; /* Zentriert das Bild und gibt Abstand nach unten */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ein kleiner Schatten sieht edel aus */
+    width: 100% !important;
+    max-width: 400px !important; /* Hier kannst du die Größe genau einstellen */
+    height: auto !important;
+    display: block !important;
+    margin: 20px auto !important; /* Zentriert das Bild */
+    border-radius: 12px;
 }
