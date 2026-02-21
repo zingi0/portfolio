@@ -98,3 +98,40 @@ header {
     margin: 20px auto !important; /* Zentriert das Bild */
     border-radius: 12px;
 }
+
+/* --- Mobile Support --- */
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Kleinere Schrift für kleine Displays */
+    }
+
+    .gallery {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .card {
+        width: 95%; /* Die Karten nehmen fast die ganze Breite ein */
+        max-width: none;
+    }
+
+    .detail-container {
+        margin: 10px;
+        padding: 20px;
+        width: auto;
+    }
+
+    .detail-image {
+        max-width: 100% !important; /* Auf dem Handy darf das Bild die volle Breite der Box nutzen */
+    }
+
+    .btn {
+        width: 100%; /* Buttons sind auf dem Handy leichter mit dem Daumen zu treffen, wenn sie breit sind */
+        box-sizing: border-box;
+    }
+}
