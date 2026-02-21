@@ -2,63 +2,27 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Mein Programm-Portfolio</title>
-    <style>
-        /* Grunddesign */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; }
-        header { background-color: #333; color: white; width: 100%; padding: 20px; text-align: center; margin-bottom: 30px; }
-        
-        /* Container für die Galerie */
-        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; padding: 20px; }
-
-        /* Einzelne Projekt-Karte */
-        .card { background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; overflow: hidden; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-5px); }
-        
-        /* Platzhalter für Bilder */
-        .project-image { width: 100%; height: 180px; background-color: #ddd; display: flex; align-items: center; justify-content: center; color: #666; font-size: 14px; }
-        
-        .card-content { padding: 20px; }
-        .card-content h3 { margin-top: 0; color: #333; }
-        .card-content p { color: #666; font-size: 14px; line-height: 1.5; height: 60px; overflow: hidden; }
-
-        /* Der Download-Button */
-        .btn { display: inline-block; background-color: #28a745; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; width: 100%; text-align: center; box-sizing: border-box; }
-        .btn:hover { background-color: #218838; }
-    </style>
-</head>
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
 
 <header>
-    <h1>Willkommen in meiner Programmier-Welt</h1>
-    <p>Hier kannst du meine Projekte entdecken und herunterladen.</p>
+    <h1>Meine Software-Projekte</h1>
+    <p>Klicke auf ein Projekt, um mehr zu erfahren.</p>
 </header>
 
 <div class="gallery">
 
-    <div class="card">
-        <div class="project-image">
-            <img src="bilder/crypto hub.png" alt="CryptoHub Vorschau" style="width:100%;">
-        </div>
+    <a href="cryptohub.html" class="card">
+        <img src="bilder/crypto hub.png" alt="CryptoHub Vorschau" class="project-image">
         <div class="card-content">
             <h3>CryptoHub</h3>
-            <p>Ein Tool, das ich programmiert habe, um Krypto-Daten zu verarbeiten oder anzuzeigen.</p>
-            <a href="https://github.com/zingi0/portfolio/releases/download/test/CryptoHub.exe" class="btn">Download (.exe)</a>
+            <p>Ein mächtiges Tool für Krypto-Fans. News, Kurse und Umrechner in einer App.</p>
+            <span class="btn">Details ansehen</span>
         </div>
-    </div>
+    </a>
 
-    <div class="card">
-        <div class="project-image">
-            [Bild folgt]
-        </div>
-        <div class="card-content">
-            <h3>Nächstes Projekt</h3>
-            <p>Hier kommt bald die Beschreibung für mein zweites cooles Programm hinein.</p>
-            <a href="#" class="btn" style="background-color: #6c757d;">Noch kein Download</a>
-        </div>
     </div>
-
-</div>
 
 </body>
 </html>
