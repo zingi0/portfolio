@@ -217,3 +217,14 @@ header {
     font-size: 0.9em;
     color: #555;
 }
+
+.detail-icon {
+    width: 120px !important; /* Hier kannst du die Größe genau bestimmen */
+    height: auto !important;
+    display: block !important;
+    margin: 20px auto !important; /* Zentriert das Icon */
+    background: #fdfdfd;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
