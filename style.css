@@ -175,3 +175,14 @@ header {
     transform: scale(1.03);
     cursor: pointer;
 }
+
+/* Der Effekt beim Draufklicken */
+.screenshot-item:active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    z-index: 1000;
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+    cursor: zoom-out;
+}
