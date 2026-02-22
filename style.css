@@ -166,3 +166,54 @@ header {
         grid-template-columns: 1fr; /* Bilder auf Handy untereinander */
     }
 }
+
+/* Installation Boxen */
+.install-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border: 1px solid #e0e0e0;
+}
+
+.install-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.install-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.install-card h4 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.btn-android {
+    background-color: #3DDC84; /* Android Grün */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.ios-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.install-card ol {
+    padding-left: 18px;
+    font-size: 0.9em;
+    color: #555;
+}
